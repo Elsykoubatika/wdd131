@@ -7,7 +7,7 @@
         <meta name="author" content="Fernandez">
         <title>WDD 131 – Dynamic Web Fundamentals - Koubatika ELsy Fernandez</title>
 
-        <link rel="stylesheet" href="scripts/base.css">
+        <link rel="stylesheet" href="styles/base.css">
 
         <!--Pour integrer du java scriptes-->
         <script src="scripts/getdates.js" defer></script>
@@ -22,7 +22,7 @@
 
     <body>
         <header>
-            <h1>WDD131: Dynamic Web fundamentals - </h1>
+            <h1>WDD131: Dynamic Web fundamentals - Koubatika Elsy fernnandez</h1>
             <nav>
                 <a href="https://www.linkedin.com/in/fk14/">linkedIn</a>
                 <a href="https://byupw.instructure.com/">Canvas</a>
@@ -31,36 +31,41 @@
             </nav>
         </header>
 
-        <main>
+        <main class="content">
+        <div class="grid">
             <section class="card">
                 <h2> Aboute me</h2>
-                <img src="/images/profil.webp" alt="Fernandez's picture">
-                <p>Hello! My name is Koubatika Elsy Fernandez I am from Brazzaville, Congo. I like eat and listen to music
-                    I am 27 years old. I am married and I have no children. I am a student at BYU Pathway Idaho where i study 
-                    computer science. I work as a sales manager in a company called Cowema.
-                </p>
-
-                <h2>Congo Brazzaville</h2>
-                <img src="/images/Brazzaville.webp" alt="Official flag of Congo Brazzaville">
-                <p> Brazzaville is the capital city of the Republic of Congo. It is a vibrant city known for its culture, 
-                history, and the Congo River.</p>
+                <article class="elsy">
+                    <img src="/images/profil.webp" alt="Fernandez's picture" class="profile">
+                    <p>Hello! My name is Koubatika Elsy Fernandez I am from Brazzaville, Congo. I like eat and listen to music
+                        I am 27 years old. I am married and I have no children. I am a student at BYU Pathway Idaho where i study 
+                        computer science. I work as a sales manager in a company called Cowema.
+                    </p>
+                </article>
+                <h3>Congo Brazzaville</h3>
+                <article class="congo">
+                    <img src="/images/flag.webp" alt="Official flag of Congo Brazzaville" class="flag">
+                    <p>The Republic of the Congo,[a] also known as Congo-Brazzaville, the Congo Republic or simply the Congo, is a country located on the western coast of Central Africa to the west of the Congo River. It is bordered to the west by Gabon, to the northwest by Cameroon, to the northeast by the Central African Republic, to the southeast by the Democratic Republic of the Congo, to the south by the Angolan exclave of Cabinda, and to the southwest by the Atlantic Ocean..</p>
+                    <h4>The flag of Congo</h4>
+                </article>
             </section>
 
             <section class="card">
                 <h2>Web Dev Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://dev.to" class="resource-link">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com" class="resource-link">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com" class="resource-link">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" class="resource-link">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com" class="resource-link">Udemy</a></li>
+                </ul>
             </section>
+        </div>
         </main>
-
-        <aside class="box">
-            <h2>Congo Brazzaville</h2>
-            <img src="/images/Brazzaville.webp" alt="My country" width="400">
-            <p> Brazzaville is the capital city of the Republic of Congo. It is a vibrant city known for its culture, 
-            history, and the Congo River.</p>
-        </aside>
 
         <footer>
             <p>©<span id="currentyear"></span> ❖ Koubatika Elsy Fernandez, Brazzaville ❖</p>
-            <p><span id=" lastModified"></span> </p>
+            <p><span id="lastModified"></span> </p>
         </footer>
     </body>
     <!--date de modficication 16/01/205-->
