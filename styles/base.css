@@ -60,9 +60,9 @@ nav a:hover {
 
 .profile {
     position: absolute;
-    left: 64rem;
+    left: 65rem;
     top: 210px;
-    width: 10%;
+    width: 9%;
 }
 
 .flag {
@@ -122,23 +122,24 @@ nav a:hover {
 }
 
 .card p {
-    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 
 .elsy P {
+    font-size: 16px;
     display: flex;
     position: relative;
-    width: 74%;
-    left: 30px;
+    width: 76%;
+    left: 20px;
     top: 20px;
 }
 
 .congo p {
+    font-size: 16px;
     display: flex;
     position: relative;
     left: 200px;
-    width: 60%
+    width: 55%
 }
 
 .congo h4 {
