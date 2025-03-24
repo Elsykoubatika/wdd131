@@ -59,9 +59,9 @@ nav a:hover {
 }
 
 .profile {
-    position: absolute;
+    display: flex;
+    position: relative;
     left: 65rem;
-    top: 210px;
     width: 9%;
 }
 
