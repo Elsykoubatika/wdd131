@@ -8,7 +8,7 @@ const lastModified = new Date(document.lastModified);
 const formattedLastModified = lastModified.toLocaleDateString();
 
 // Insert the current year into the first paragraph of the footer
-document.getElementById("currentyear").textContent = `${currentYear}`;
+document.getElementById('currentyear').textContent = `${currentYear}`;
 
 // Insert the last modified date into the second paragraph of the footer
 document.getElementById("lastModified").textContent = `Last modified: ${formattedLastModified}`;

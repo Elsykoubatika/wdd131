@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="/Week03/styles/place.css">
+        <link rel="stylesheet" href="/Week03/styles/place-large.css">
+
+        <script src="/Week03/scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Congo Brazzaville</h1>
+        </header>
+        <div class="brazza">
+            <picture>
+                <source media="(min-width: 700px)" srcset="/Week03/images/elephante.webp">
+                <img src="/Week03/images/big-elephante.webp" alt="A hero image" >
+            </picture>
+        </div>
+        <main>
+            <div class="congo">
+                <h2>Data</h2>
+                <div class="data">
+                    <p><strong>Area:</strong><span id="Area"> 342,000 sq km</span></p>
+                    <p><strong>Population: </strong><span id="population"> 5,518,092</span></p>
+                    <p><strong>Capital: </strong><span id="capital">Brazzaville</span></p>
+                    <p><strong>Languages: </strong><span id="language">Kinkongo, French</span></p>
+                    <p><strong>Currency: </strong><span id="currency">Central African FCFA</span></p> 
+                    <p><strong>Time Zone: </strong><span id="time">UTC+1</span></p>
+                    <p><strong>Calling Code: </strong><span id="calling">+242</span></p>
+                    <p><strong>Internet TLD: </strong><span id="internet">.cg</span></p>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <div class="icons">
+                    <img src="/Week03/images/weather.svg" alt="Weather icon" id="weather-icon" width="40">
+                </div>
+                <div class="temperature">
+                    <p><strong>Temperature: </strong><span id="temperature"></span></p>
+                    <p><strong>conditions: </strong><span id="conditions"></span></p>
+                    <p><strong>Wind Speed: </strong><span id="wind-speed"></span></p>
+                    <p><strong>Wind Chill: </strong><span id="wind"></span></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> ❖ Koubatika Elsy Fernandez, Brazzaville ❖</p>
+            <p><span id="lastModified"></span> </p>
+        </footer>
+    </body>
+</html>
