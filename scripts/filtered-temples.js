@@ -83,6 +83,30 @@ const temples = [
 		area: 116642,
 		imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
+
+	{
+		templeName: "Barranquilla Colombia",
+		location: "Barranquilla, Colombia",
+		dedicated: "2018, December, 9",
+		area: 11500,
+		imageUrl: "https://www.churchofjesuschrist.org/imgs/7e68e3b2ed30f817f91392968737f45a07e17e79/full/500%2C/0/default"
+	},
+
+	{
+		templeName: " Argentina",
+		location: "Ciudad Evita, Buenos Aires, Argentina",
+		dedicated: "1986, January, 17",
+		area: 11500,
+		imageUrl: "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/500%2C/0/default"
+	},
+
+	{
+		templeName: "Seoul Korea Temple",
+		location: "Seoul, Seoul-teukbyeolsi, South Korea",
+		dedicated: "1985, December, 14 ",
+		area: 11500,
+		imageUrl: "https://www.churchofjesuschrist.org/imgs/57efcc4b6a1c664c934aa672b0f8de38a8f539c4/full/500%2C/0/default"
+	},
 	// Add more temple objects here...
 ];
 
