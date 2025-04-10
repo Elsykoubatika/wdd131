@@ -1,0 +1,213 @@
+* {
+    margin: 0 ;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #1d4d72;
+    --secondary-color: #e6f3ed;
+    --tertiary-color: #333333;
+    --quaternary-color: #000000;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;   
+}
+
+h2{
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+p, label{
+    font-size: 1.5rem;
+    margin: 0 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--tertiary-color);
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.note{
+    display: flex;
+    border: none;
+}
+
+select {
+    display: flex;
+    border-radius: 0.3rem;
+    height: 30px;
+    border: none;
+    margin: 0 20px;
+    width: 90%;
+    font-weight: bold;
+}
+
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+}
+
+input[type="submit"]:hover {
+    transform:scale(1.1);
+    transition: 0.2s ease;
+}
+
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.stars {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 40px;
+}
+  /* hide the inputs */
+
+.stars input {
+    display: none;
+}
+/* set properties of all labels */
+.stars > label {
+    height: 30px;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+    cursor: pointer;
+}
+/* give label a hover state */
+.stars label:hover {
+    color: var(--quaternary-color);
+    transform:scale(1.1);
+    transition: 0.2s ease;
+}
+.stars label:active::before {
+    transform:scale(1.1);
+}
+
+/* set shape of unselected label */
+.stars label::before {
+    content: '\2606';
+    position: absolute;
+    line-height: 4rem;
+}
+/* set full star shape for checked label and those that come after it */
+.stars input:checked ~ label:before {
+    content:'\2605';
+}
+
+@-moz-document url-prefix() {
+    .stars input:checked ~ label:before {
+    line-height: 21px;
+
+    }
+}
+
+legend {
+    font-size: 1.5rem;
+    margin: 0 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 20px;
+    font-weight: bold;
+    border: none;
+}
+
+    .features label {
+        font-size: 1rem;
+        margin: 0 0 0 2rem;
+        font-weight: bold;
+    }
+
+    .features input[type="checkbox"] {
+        display: flex;
+        width: 15px;
+        height: 20px;
+        position: relative;
+        bottom: 20px;
+        cursor: pointer;
+    }
+    .features input[type="checkbox"]:checked {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin: 0 20px;
+    resize: none;
+    border: none;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin: 0 20px;
+    border: none;
+}
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="date"] {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin: 0 20px;
+    border: none;
+    font-weight: bold;
+}
+
+option {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+}
