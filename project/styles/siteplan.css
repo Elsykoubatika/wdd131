@@ -1,0 +1,20 @@
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #e03a44;
+    font-size: 4rem;
+}
+
+p, li{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+strong {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+}
+img {
+    width: 40%;
+    height: auto;
+}
