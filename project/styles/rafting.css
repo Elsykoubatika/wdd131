@@ -1,0 +1,469 @@
+/*Les variables CSS globales sont utilisées en appelant le nom de la variable avec la var()fonction
+Les sites Web complexes contiennent de très grandes quantités de CSS, ce qui entraîne souvent de 
+nombreuses valeurs CSS répétées. Par exemple, il est courant de voir la même couleur utilisée à des centaines d'endroits différents dans les feuilles de style. La modification d'une couleur qui a été dupliquée à de nombreux endroits*/
+:root {
+	--black: #000000ff;
+	--white: #FFFFFFFF;
+	--polynesian-blue: #0056b3;
+	--penn-blue: #0087bd;
+	--blue: #ced5e3;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--blue);
+}
+
+header {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	background-color: var(--penn-blue);
+}
+
+.logo-box img {
+	width: 90px;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+	border-radius: 4px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+nav a {
+	color: var(--white);
+	font-size: 1.2rem;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+nav a:hover {
+	background: var(--polynesian-blue);
+	color: var(--white);
+	transform: scale(1.1);
+}
+
+article {
+	position: relative;
+	bottom: 20rem;
+	background: var(--polynesian-blue);
+	box-shadow: 0 3px 60px #111;
+	opacity: 0.7;
+	width: 250rem;
+	border-radius: 7px;
+	padding: 1rem;
+}
+
+div h1 {
+	position: relative;
+	opacity: 0.6;
+	width: 150.2rem;
+	color: var(--white);
+	background: var(--black);
+	text-align: center;
+	font-family: Arial, sans-serif;
+	bottom: 40rem;
+}
+
+div img {
+	width: 145rem;
+	display: flex;
+}
+
+article p {
+	color: var(--black);
+	width: 100rem;
+	font-size: 1.8rem;
+	font-family: Arial, sans-serif;
+	text-align: justify;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 1px;
+}
+
+article img {
+	width: 15rem;
+	position: absolute;
+	right: 1.4rem;
+	display: flex;
+	border-radius: 4px;
+}
+
+.history {
+	position: relative;
+	bottom: 100px;
+	color: var(--black);
+	font-size: 1.8rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+}
+
+.history img {
+	width: 30rem;
+	position: absolute;
+	border-radius: 6px;
+	right: 46.7rem;
+	display: flex;
+}
+
+.history-text {
+	display: flex;
+	gap: 30rem;
+	flex: 1;
+}
+
+.history p {
+	flex: 1;
+	text-align: justify;
+	font-size: 1.4rem;
+	padding: 3rem;
+	font-family: Arial, sans-serif;
+}
+
+h2 {
+	color: var(--polynesian-blue);
+	font-size: 3rem;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 49rem;
+	bottom: 19rem;
+}
+
+.adventure {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.adventure .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.adventure img {
+	width: 25rem;
+	height: 15rem;
+	border-radius: 6px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	margin: 10px;
+}
+
+.adventure h3 {
+	font-size: 15px;
+	margin-top: 17rem;
+	right: 8rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.adventure h2 {
+	top: 82rem;
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	text-align: center;
+	left: 48rem;
+}
+
+.adventure img:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+.office-container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+}
+
+.Globals-Offices h2 {
+	bottom: 9rem;
+}
+
+.Globals-Offices p {
+	top: 14rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: 15rem;
+	font-size: 14px;
+}
+
+.Globals-Offices img {
+	width: 30rem;
+	height: 20rem;
+	border-radius: 6px;
+}
+
+.send {
+	margin: 10rem 45rem 25px;
+	background-color: #0087bd;
+	border-radius: 15px;
+	width: 35rem;
+}
+
+.send h2 {
+	top: 100px
+}
+
+label {
+	margin: 10px 0 0;
+	font-size: 14px;
+}
+
+.button {
+	display: grid;
+	grid-auto-flow: row;
+	grid-auto-columns: minmax(160px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+	margin: 15px;
+}
+
+button {
+	width: 200px;
+	height: 70px;
+	margin: 2rem 6rem 3rem;
+	background-color: var(--polynesian-blue);
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+form {
+	width: 30rem;
+	display: grid;
+	grid-auto-flow: row;
+	grid-auto-columns: minmax(16px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+	font-size: 14px;
+	margin: 0 25px 0;
+}
+
+fieldset {
+    border: 0; /* Supprime la bordure */
+}
+
+.map {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+	overflow-x: auto;
+	white-space: nowrap;
+	margin: 90px;
+}
+
+.map iframe {
+	width: 50rem;
+	height: 30rem;
+	border-radius: 6px;
+}
+
+.contact-info {
+	top: 20rem;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-info h2 {
+	left: 1px;
+	bottom: 28rem;
+}
+
+.contact-info p {
+	font-size: 25px;
+	margin: 30px 50px 20px;
+}
+
+.company {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px 1px;
+}
+.company h3 {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 8rem;
+	color: var(--blue);
+	box-shadow: 1px 1px 38px var(--penn-blue);
+}
+
+
+.company form {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	bottom: 20px;
+}
+
+.company h3:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+.rafting {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+}
+
+.rafting img {
+	width: 38rem;
+	height: 26rem;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	margin: 2rem 0 20rem;
+	background-color: var(--penn-blue);
+}
+
+.rafting img:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+.rafting h3 {
+	position: relative;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(160px, 1fr);
+	white-space: nowrap;
+	margin-top: 30rem;
+	right: 13.6rem;
+	background-color: var(--penn-blue);
+	width: 36rem;
+	height: 2rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.rafting p {
+	position: relative;
+	color: var(--black);
+	width: 37rem;
+	font-size: 1.4rem;
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	top: 34rem;
+	right: 27rem;
+}
+
+.rafting h2 {
+	position: absolute;
+	font-size: 5rem;
+	top: 70rem;
+	left: 40rem;
+	align-items: center;
+	text-align: center;
+}
+
+.thrills article {
+	position: relative;
+	bottom: 20rem;
+	background: var(--penn-blue);
+	width: 50rem;
+	height: 30rem;
+	padding: 1rem;
+	left: 60rem;
+	bottom: 36rem;
+	opacity: 8;
+	font-size: 30px;
+}
+.thrills img {
+	width: 90rem;
+	height: 45rem;
+	margin-top: 10rem;
+	border-radius: 6px;
+}
+.thrills P {
+	color: var(--black);
+	width: 45rem;
+	font-size: 1.4rem;
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	font-size: 25px;
+	padding: 0 20px;
+}
+
+.button-text {
+	position: absolute;
+	top: 168rem;
+	left: 85rem;
+}
+.send h3 {
+	font-size: 3rem;
+	text-align: center;
+	color: var(--white);
+}
+a:hover {
+	background: var(--polynesian-blue);
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+.call-to-action {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10rem;
+	position: absolute;
+	top: 125rem;
+}
+
+button:hover {
+	transform: scale(1.1);
+	transition: transform 0.2s;
+}
+
+footer {
+	/*position: fixed;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--penn-blue);
+	padding: 1px 20px;
+}
+
+footer img {
+	width: 30px;
+}
+
+footer a {
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: center;
+	justify-items: center;
+}

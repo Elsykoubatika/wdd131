@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Révision</title>
+
+    <meta name="description" content="Formulaire de révision de produit.">
+    <meta name="author" content="KOUBATIKA ELSY FERNANDEZ">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+	<header class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<nav class="nav-links">
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact </a>
+			<a href="form.html">Subscis</a>
+		</nav>
+		<form method="get" action="form.html">
+			<input type="submit" value="Plus">
+		</form>
+	</header>
+    <form method="get" action="review.html">
+        <!-- Nom du produit -->
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product…</option>
+        </select>
+        <br><br>
+
+        <!-- Date d'installation -->
+        <label for="installDate">Age</label>
+        <input type="date" id="installDate" name="installDate" required>
+        <br><br>
+
+        <!-- Nom d'utilisateur -->
+        <label for="username">Name </label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        
+        <label for="username">Telephone</label>
+        <input type="phone" id="username" name="username">
+        <br><br>
+        <!-- Bouton de soumission -->
+        <input type="submit" value="Post Review">
+    </form>
+
+	<footer class="footer">
+        <img src="images/logo.png" alt="logo">
+		<div class="footer-bottom">
+			<p>©<span id="currentyear"></span> ❖ Koubatika Elsy Fernandez, Brazzaville ❖</p>
+            <p><span id="lastModified"></span> </p>
+			<nav class="sociallinks">			
+				<a href="trips.html"><strong>Trips</strong></a>			
+				<a href="contact.html"><strong>Contact Us</strong></a>			
+				<a href="https://facebook.com">				
+					<img src="images/facebook_con.webp" alt="Facebook">
+				</a>			
+				<a href="https://twitter.com">				
+					<img src="images/twitter_con.webp" alt="Twitter">
+				</a>			
+				<a href="https://instagram.com">				
+					<img src="images/tiktok_con.webp" alt="Instagram">			
+				</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
