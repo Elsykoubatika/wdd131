@@ -466,3 +466,218 @@ form p {
     text-align: center;
     margin: 10px 0;
 }
+
+.map {
+    width: 100%;
+    border-radius: 8px;
+}
+iframe {
+    width: 100%;
+    height: 60vh;
+    border: none;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fond);
+    gap: 2rem;
+    bottom: 30rem;
+    left: 40rem;
+    width: 20%;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.info h2 {
+    font-size: 2rem;
+    color: var(--boutton);
+}
+
+.info p {
+    font-size: 1rem;
+    color: var(--texte);
+}
+
+.info input[type=submit] {
+    display: flex;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    background-color: var(--boutton);
+    color: var(--fond);
+    width: 13rem;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.info input[type=submit]:hover {
+    color: var(--fond);
+    background-color: var(--texte);
+    transform:scale(1.1);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.mission {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.call, .inscri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 30vh;
+    padding: 2rem;
+    background-color: var(--fond);
+    border-color: var(--boutton);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.call h2, .inscri h2 {
+    font-size: 3rem;
+    color: var(--texte);
+    text-align: center;
+    margin: 10px 0;
+}
+.call p, .inscri p {
+    font-size: 1rem;
+    color: var(--texte);
+    text-align: center;
+    margin: 10px 0;
+}
+.call input[type=submit], .inscri input[type=submit] {
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    background-color: var(--boutton);
+    color: var(--fond);
+    margin: 2rem 0;
+}
+.call input[type=submit]:hover, .inscri input[type=submit]:hover {
+    color: var(--fond);
+    background-color: var(--texte);
+    transform:scale(1.1);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.call img {
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.call a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.faim {
+    width: 100%;
+    position: relative;
+    background-color: var(--texte);
+    text-align: center;
+    padding: 10rem;
+}
+
+.faim h2 {
+    color: var(--fond);
+    position: relative;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--boutton);
+    opacity: 0.8;
+    bottom: 6rem;
+}
+
+.faim p {
+    color: var(--fond);
+    font-size: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contener {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 5rem;
+    margin: 0 auto;
+    background: var(--texte);
+
+}
+.contener img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    margin: rem 1auto;
+}
+
+.globals h2 {
+    font-size: 5rem;
+    color: var(--boutton);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.global {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgb(176, 8, 8);
+    background-color: var(--fond);
+    padding: 2rem;
+    width: 90%;
+    margin: 1px auto;
+    border-radius: 4px;
+    gap: 2rem;
+}
+
+.global em {
+    font-size: 1.2rem;
+    color: var(--texte);
+    text-align: center;
+    margin: 10px 0;
+}
+.global p {
+    font-size: 1rem;
+    color: var(--texte);
+}
+
+.global input[type=submit] {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    background-color: var(--boutton);
+    color: var(--fond);
+    width: 13rem;
+    margin: 0 auto;
+}
+.global input[type=submit]:hover {
+    color: var(--fond);
+    background-color: var(--texte);
+    transform:scale(1.1);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
