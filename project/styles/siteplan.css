@@ -466,24 +466,3 @@ form p {
     text-align: center;
     margin: 10px 0;
 }
-
-#menu {
-    display: block;
-	font-size: 4rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-    color: var(--tertiary-color);
-}
-
-#menu::before {
-	content: "≡";
-}
-
-.show button {
-	display: none;
-}
-
-#menu.show::before {
-	content: "X";
-}

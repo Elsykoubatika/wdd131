@@ -1,235 +1,31 @@
 /*Media Queries*/
-@media (max-width: 1200px) {
-    .navbar h1 {
-        font-size: 5rem;
-        position: relative;
-        right: 2rem;   
+@media (max-width: 640px) {
+
+    .nav-links {
+		display: flex;
+        justify-content: space-around;
+	}
+	.nav-links a {
+		display: flex; /* change state in small view */
+	}
+	#menu {
+		display: none;
+	}
+
+    #menu:checked ~ .nav-links {
+        display: flex;
     }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-    .hero p {
-        font-size: 1.3rem;
-    }
-    .presentation h2 {
-        font-size: 4rem;
-    } 
-    .presentation p {
-        font-size: 1.5rem;
-    } 
+
 }
-@media (max-width: 900px) {
-    .navbar h1 {
-        font-size: 4rem;
-        position: relative;
-        right: 2rem;   
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
     }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
+
+    100% {
+        opacity: 1;
     }
-    .hero h2 {
-        font-size: 2rem;
-    }
-    .hero p {
-        font-size: 1.3rem;
-    }
-    .presentation h2 {
-        font-size: 3rem;
-    } 
-    .presentation p {
-        font-size: 1.3rem;
-    } 
-}
-@media (max-width: 600px) {
-    .navbar h1 {
-        font-size: 3rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 1.8rem;
-    }
-    .hero p {
-        font-size: 1.2rem;
-    }
-    .presentation h2 {
-        font-size: 2.5rem;
-    } 
-    .presentation p {
-        font-size: 1.2rem;
-    } 
-}
-@media (max-width: 400px) {
-    .navbar h1 {
-        font-size: 2rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-    .hero p {
-        font-size: 1.1rem;
-    }
-    .presentation h2 {
-        font-size: 2rem;
-    } 
-    .presentation p {
-        font-size: 1.1rem;
-    } 
-}
-@media (max-width: 300px) {
-    .navbar h1 {
-        font-size: 1.5rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 1.3rem;
-    }
-    .hero p {
-        font-size: 1rem;
-    }
-    .presentation h2 {
-        font-size: 1.8rem;
-    } 
-    .presentation p {
-        font-size: 1rem;
-    } 
-}
-@media (max-width: 200px) {
-    .navbar h1 {
-        font-size: 1rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 1rem;
-    }
-    .hero p {
-        font-size: 0.8rem;
-    }
-    .presentation h2 {
-        font-size: 1.5rem;
-    } 
-    .presentation p {
-        font-size: 0.8rem;
-    } 
-}
-@media (max-width: 100px) {
-    .navbar h1 {
-        font-size: 0.8rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 0.8rem;
-    }
-    .hero p {
-        font-size: 0.6rem;
-    }
-    .presentation h2 {
-        font-size: 1.3rem;
-    } 
-    .presentation p {
-        font-size: 0.6rem;
-    } 
-} 
-@media (max-width: 50px) {
-    .navbar h1 {
-        font-size: 0.5rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 0.5rem;
-    }
-    .hero p {
-        font-size: 0.4rem;
-    }
-    .presentation h2 {
-        font-size: 0.8rem;
-    } 
-    .presentation p {
-        font-size: 0.4rem;
-    } 
-}
-@media (max-width: 20px) {
-    .navbar h1 {
-        font-size: 0.3rem;
-        position: relative;
-        right: 2rem;   
-    }
-    .navbar input[type=submit] {
-        padding: 0.5rem;
-        font-size: 15px;
-        position: relative;
-        top: 20px;
-        right: 1rem;
-    }
-    .hero h2 {
-        font-size: 0.3rem;
-    }
-    .hero p {
-        font-size: 0.2rem;
-    }
-    .presentation h2 {
-        font-size: 0.5rem;
-    } 
-    .presentation p {
-        font-size: 0.2rem;
-    } 
+
 }
