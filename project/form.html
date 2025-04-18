@@ -8,8 +8,8 @@
     <meta name="description" content="Formulaire de révision de produit.">
     <meta name="author" content="KOUBATIKA ELSY FERNANDEZ">
 
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
 
     <script src="scripts/siteplan.js" defer></script>
 </head>
@@ -19,56 +19,78 @@
 		<div class="logo">
 			<img src="images/logo.png" alt="logo">
 		</div>
+        <h1>Aïkido Irimi Club</h1>
+        <a id="menu" href="#"></a>
 		<nav class="nav-links">
-			<a href="about.html">About Us</a>
-			<a href="contact.html">Contact </a>
-			<a href="form.html">Subscis</a>
+			<a href="index.html">Home</a>
+			<a href="contact.html">About Us</a>
+			<a href="form.html">Contact</a>
 		</nav>
 		<form method="get" action="form.html">
-			<input type="submit" value="Plus">
+			<input type="submit" value="Subscrir">
 		</form>
 	</header>
-    <form method="get" action="review.html">
-        <!-- Nom du produit -->
-        <label for="product">Product Name</label>
-        <select id="product" name="product" required>
-            <option value="" disabled selected>Choose a Product…</option>
-        </select>
-        <br><br>
+    <main>
+        <form method="get" action="review.html">
+            <h2>Formulaire de Révision</h2>
+            <p>Merci de remplir le formulaire ci-dessous pour soumettre votre révision.</p>
+            <!-- Nom d'utilisateur -->
+            <label for="username">Name </label>
+            <input type="text" id="text" name="username">
+            <br><br>
 
-        <!-- Date d'installation -->
-        <label for="installDate">Age</label>
-        <input type="date" id="installDate" name="installDate" required>
-        <br><br>
+            <label for="username">Adress E-mail</label>
+            <input type="e-mail" id="email" name="email">
+            <br><br>
 
-        <!-- Nom d'utilisateur -->
-        <label for="username">Name </label>
-        <input type="text" id="username" name="username">
-        <br><br>
-        
-        <label for="username">Telephone</label>
-        <input type="phone" id="username" name="username">
-        <br><br>
-        <!-- Bouton de soumission -->
-        <input type="submit" value="Post Review">
-    </form>
+            <label for="username">Telephone</label>
+            <input type="phone" id="phone" name="phone">
+            <br><br>
+            <!-- Nom du produit -->
+            <label for="product">Categorie</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Choose a categorie…</option>
+            </select>
+            <br><br>
 
+            <label for="message"><strong>Votre message</strong></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <p class="text"><strong>Details:</strong> </p>
+            <p class="price"><strong>Prix Total: </strong> </p>
+
+            <fieldset class="button">
+                <label>
+                    <input type="checkbox" name="message_type" value="general" required>
+                    Accepter les conditions
+                </label>
+            </fieldset>
+            <!-- Bouton de soumission -->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
 	<footer class="footer">
-        <img src="images/logo.png" alt="logo">
+		<div class="footer-logo">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<h3>Aïkido Irimi Club</h3>
+		<div class="footer-p">
+			<p>©<span id="currentyear"></span> ❖ Koubatika Elsy Fernandez, Brazzaville ❖ </p>
+			<p><span id="lastModified"></span> </p>
+		</div>
 		<div class="footer-bottom">
-			<p>©<span id="currentyear"></span> ❖ Koubatika Elsy Fernandez, Brazzaville ❖</p>
-            <p><span id="lastModified"></span> </p>
-			<nav class="sociallinks">			
-				<a href="trips.html"><strong>Trips</strong></a>			
-				<a href="contact.html"><strong>Contact Us</strong></a>			
+			<nav class="sociallinks">
+				<div class="foot">
+					<a href="contact.html"><strong>Contact Us</strong></a>
+				</div>			
 				<a href="https://facebook.com">				
-					<img src="images/facebook_con.webp" alt="Facebook">
+					<img src="images/facebook.png" alt="Facebook">
 				</a>			
 				<a href="https://twitter.com">				
-					<img src="images/twitter_con.webp" alt="Twitter">
+					<img src="images/twitter.png" alt="Twitter">
 				</a>			
 				<a href="https://instagram.com">				
-					<img src="images/tiktok_con.webp" alt="Instagram">			
+					<img src="images/instagram.png" alt="Instagram">			
 				</a>
 			</nav>
 		</div>

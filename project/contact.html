@@ -1,113 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Wireframe Practice</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aïkido Irimi Club</title>	
 
-		<script src="/___vscode_livepreview_injected_script"></script>
+		<meta name="description" content="Formulaire de révision de produit.">
+		<meta name="author" content="KOUBATIKA ELSY FERNANDEZ">	
 
-		<link rel="stylesheet" href="styles/rafting.css">
+		<link rel="stylesheet" href="styles/siteplan-large.css">
+		<link rel="stylesheet" href="styles/siteplan.css">
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+		<script src="scripts/siteplan.js" defer></script>
 	</head>
-	<body>
-		<header>
-			<div class="logo-box">
-				<img src="images/z-splash.webp" alt="Logo">
-			</div>
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="about.html">About Us</a>
-				<a href="trips.html">Trips</a>
-				<a href="contact.html">contact Us</a>
-			</nav>
-		</header>
-		<main>
-			<div class="map">
-                <h1>Contact Us</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d681.7606564574477!2d15.22162834416163!3d-4.282527915795079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-4.282652579568432!2d15.221846197466169!5e0!3m2!1sfr!2scg!4v1739612690376!5m2!1sfr!2scg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-
-            <section class="contact-info">
-                <h2>Nos coordonnées</h2>
-                <p><strong>Adresse :</strong> 123 Rue des Aventuriers, Brazzaville</p>
-                <p><strong>Téléphone :</strong> +242 06 123 4567</p>
-                <p><strong>Email :</strong> contact@votreentreprise.com</p>
-                <p><strong>Horaires :</strong> Lun-Ven : 8h - 18h | Sam : 9h - 14h</p>
-			</section>
-
-			<section class="Globals-Offices">
-				<h2>Globals Offices</h2>
-				<div class="office-container">
-					<img src="images/daved.webp" alt="Rafting sur une rivière transparente">
-                	<p><strong>Photographe/Vidéaste</strong>  Prix de photos et vidéos des participants.</p>
-
-					<img src="images/team.webp" alt="Rafting en équipe">
-					<p><strong>Agent de Réservation</strong>  Gère les réservations et l'accueil des clients.</p>
-
-					<img src="images/expert.webp" alt="Rafting dans une rivière étroite">
-                	<p><strong>Technicien Matériel</strong> Vérifie et entretient tout l'équipement de rafting.</p>
-
-                	<img src="images/office.webp" alt="Rafting dans une rivière étroite">
-                	<p><strong>Guide de Rafting</strong> Accompagner les clients sur la rivière et assurer leur sécurité.</p>
-				</div>
-			</section>
-            
-            <section class="send"> 
-				<h3>Send us message</h3>
-                <form action="envoyer.php" method="POST">
-                    <label for="name"><strong>Nom et Prénom</strong></label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email"><strong>Adresse e-mail</strong></label>
-                    <input type="email" id="email" name="email" required>
-
-                    <!-- 🔹 Boutons radio pour le choix du type de message -->
-					<fieldset class="button">
-                	    <legend><strong>Quel est le but de votre message ?</strong></legend>
-                	    <label>
-                	        <input type="radio" name="message_type" value="general" required>
-                	        Demande d'information générale
-                	    </label>
-                	    <label>
-                	        <input type="radio" name="message_type" value="reservation">
-                	        Question de réservation
-                	    </label>
-					
-                	    <label>
-                	        <input type="radio" name="message_type" value="suggestion">
-                	        Suggestion de site Web
-                	    </label>
-					</fieldset>
-                    <label for="message"><strong>Votre message</strong></label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit"><strong>Envoyer</strong></button>
-                </form>
-		</main>
-		<footer>
-			<p>©2025 ❖ Koubatika Elsy Fernandez, Brazzaville</p>
+<body>
+	<header class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<h1>Aïkido Irimi Club</h1>
+		<a id="menu" href="#"></a>
+		<nav class="nav-links">
+			<a href="index.html">Home</a>
+			<a href="contact.html">About Us</a>
+			<a href="form.html">Contact</a>
+		</nav>
+		<form method="get" action="form.html">
+			<input type="submit" value="Subscrir">
+		</form>
+	</header>
+	<div class="map">
+        <h2>Contact Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d681.7606564574477!2d15.22162834416163!3d-4.282527915795079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-4.282652579568432!2d15.221846197466169!5e0!3m2!1sfr!2scg!4v1739612690376!5m2!1sfr!2scg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+    <section class="contact-info">
+        <h2>Nos coordonnées</h2>
+        <p><strong>Adresse :</strong> 123 Rue des Aventuriers, Brazzaville</p>
+        <p><strong>Téléphone :</strong> +242 06 123 4567</p>
+        <p><strong>Email :</strong> contact@votreentreprise.com</p>
+        <p><strong>Horaires :</strong> Lun-Ven : 8h - 18h | Sam : 9h - 14h</p>
+	</section>
+	<section class="Globals-Offices">
+		<h2>Globals Offices</h2>
+		<div class="office-container">
+			<img src="images/daved.webp" alt="Rafting sur une rivière transparente">
+			<p><strong>Photographe/Vidéaste</strong>  Prix de photos et vidéos des participants.</p>
+			<img src="images/team.webp" alt="Rafting en équipe">
+			<p><strong>Agent de Réservation</strong>  Gère les réservations et l'accueil des clients.</p>
+			<img src="images/expert.webp" alt="Rafting dans une rivière étroite">
+			<p><strong>Technicien Matériel</strong> Vérifie et entretient tout l'équipement de rafting.</p>
+			<img src="images/office.webp" alt="Rafting dans une rivière étroite">
+			<p><strong>Guide de Rafting</strong> Accompagner les clients sur la rivière et assurer leur sécurité.</p>
+		</div>
+	</section>
+    
+    <section class="send"> 
+		<h3>Send us message</h3>
+        <form method="get" action="review.html" method="POST">
+            <label for="name"><strong>Nom et Prénom</strong></label>
+            <input type="text" id="name" name="name" required>
+            <label for="email"><strong>Adresse e-mail</strong></label>
+            <input type="email" id="email" name="email" required>
+            <!-- 🔹 Boutons radio pour le choix du type de message -->
+			<fieldset class="button">
+				<legend><strong>Quel est le but de votre message ?</strong></legend>
+				<label>
+				<input type="checkbox" name="message_type" value="general" required>Demande d'information générale
+				</label>
+				<label><input type="checkbox" name="message_type" value="reservation">Question de réservation</label>
+				<label><input type="checkbox" name="message_type" value="suggestion">Suggestion de site Web</label>
+			</fieldset>
+            <label for="message"><strong>Votre message</strong></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+	</section>
+	<footer class="footer">
+		<div class="footer-logo">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<h3>Aïkido Irimi Club</h3>
+		<div class="footer-p">
+			<p>©<span id="currentyear"></span> ❖ Koubatika Elsy Fernandez, Brazzaville ❖ </p>
+			<p><span id="lastModified"></span> </p>
+		</div>
+		<div class="footer-bottom">
 			<nav class="sociallinks">
-
-				<a href="trips.html"><strong>Trips</strong></a>
-
-                <a href="contact.html"><strong>Contact Us</strong></a>
-				
-				<a href="https://facebook.com">
-					<img src="images/facebook_con.webp" alt="Facebook">
-				</a>
-				<a href="https://twitter.com">
-					<img src="images/twitter_con.webp" alt="Twitter">
-				</a>
-				<a href="https://instagram.com">
-					<img src="images/tiktok_con.webp" alt="Instagram">
+				<div class="foot">
+					<a href="contact.html"><strong>Contact Us</strong></a>
+				</div>			
+				<a href="https://facebook.com">				
+					<img src="images/facebook.png" alt="Facebook">
+				</a>			
+				<a href="https://twitter.com">				
+					<img src="images/twitter.png" alt="Twitter">
+				</a>			
+				<a href="https://instagram.com">				
+					<img src="images/instagram.png" alt="Instagram">			
 				</a>
 			</nav>
-		</footer>
-	</body>
+		</div>
+	</footer>
+</body>
 </html>

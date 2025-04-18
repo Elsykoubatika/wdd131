@@ -1,4 +1,5 @@
-	
+
+
 	// Get the current year
 	const currentYear = new Date().getFullYear();
 	
@@ -26,29 +27,22 @@
 
 const products = [
 	{
-	id: "fc-1888",
-	name: "flux capacitor",
-	averagerating: 4.5
+		inscriptions: 30,
+		prix: 50,
+		name: "Child",
+		detail: "50$/Mois pour les enfants ager de 5-12 ans"
 	},
 	{
-	id: "fc-2050",
-	name: "power laces",
-	averagerating: 4.7
+		inscriptions: 30,
+		prix: 100,
+		name: "Mineur",
+		detail: "100$/Mois pour les enfants ager de 12-17ans"
 	},
 	{
-	id: "fs-1987",
-	name: "time circuits",
-	averagerating: 3.5
-	},
-	{
-	id: "ac-2000",
-	name: "low voltage reactor",
-	averagerating: 3.9
-	},
-	{
-	id: "jj-1969",
-	name: "warp equalizer",
-	averagerating: 5.0
+		inscriptions: 30,
+		prix: 200,
+		name: "Adult",
+		detail: "200$/Mois pour les Adultes"
 	}];
 	
 	const selectElement = document.getElementById("product");
@@ -57,7 +51,26 @@ const products = [
 		const option = document.createElement("option");
 		option.value = product.name;
 		option.textContent = product.name;
-	
 		selectElement.appendChild(option);
 	});
-	
+
+	selectElement.addEventListener("change", (event) => {
+		const selectedProduct = products.find(product => product.name === event.target.value);
+		if (selectedProduct) {
+			document.querySelector(".text").innerHTML = `<strong>Details:</strong> ${selectedProduct.detail}`;
+			document.querySelector(".price").innerHTML = `<strong>Prix Total: </strong> ${selectedProduct.prix}$`;
+		} else {
+			document.querySelector(".text").innerHTML = `<strong>Details:</strong>`;
+			document.querySelector(".price").innerHTML = `<strong>Prix Total: </strong>`;
+		}
+	});
+
+	// Store the selected elements that we are going to use. This is not required but a good practice with larger programs where the variable will be referenced more than once.
+const mainnav = document.querySelector('.nav-links')
+const hambutton = document.querySelector('#menu');
+
+// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+});
