@@ -1,49 +1,295 @@
 /*Media Queries*/
 @media (max-width: 640px) {
-
-    /* Styles for small screens */
-    .navbar h1{
-        font-size: 4rem;
-        margin: 0 auto;
+    header {
+        background-image: url("../images/entete.webp");
+        height: 19vh;
     }
-    .nav-links {
-		display: block;
-        justify-content: space-between;
-	}
-    .nav-links a {
-        display: block;
-        text-decoration: none;
-        color: var(--fond);
-        font-size: 1.8rem;
-        font-weight: bold;
-        background: var(--boutton);
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-    }
-    
-    #menu {
-        display: block;
-        font-size: 4rem;
-        font-weight: 700;
-        text-decoration: none;
-        padding: 0.5rem 0.75rem;
-        color: var(--tertiary-color);
-    }
-    
-    #menu::before {
-        content: "≡";
-    }
-    
-    .show button {
+    header h1 {
         display: none;
     }
     
-    #menu.show::before {
-        content: "X";
+    .logo img {
+        width: 100px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 0.5rem 1rem;
+        position: relative;
+        top: 3rem;
+    }
+    
+    nav {
+        gap: 3rem;
+    }
+    
+    .navbar input[type=submit] {
+        padding: 0.5rem;
+        position: relative;
+        top: 9px;
+        right: 1rem;
     }
 
-}
+    .footer-p {
+        font-size: 8px;
+        position: relative;
+        left: 1rem;
+    }
+    
+    .footer-logo img{
+        width: 50px;
+        gap: 0.5rem;
+    }
+    
+    footer h3 {
+        display: none;
+    }
+    
+    .foot {
+        padding: 0.5rem;        
+    }
+    .sociallinks a {
+        font-size: 2rem;
+    }
+    
+    .sociallinks img {
+        width: 20px;
+        gap: 0.5rem;
+    }
 
+    .hero h2 {
+        position: relative;
+        top: 3rem;
+        width: 90%;
+        font-size: 2rem;
+        color: var(--boutton);
+    }
+    
+    .hero p {
+        color: var(--fond);
+        width: 100%;
+        font-size: 1rem;
+        padding: 5rem;
+    }
+    /*form*/
+    main form {
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    
+    main {
+        padding: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form P {
+        margin: 10px;
+    }
+    .presentation h2 {
+        font-size: 2rem;
+        width: 90%;
+    }   
+    
+    .presentation p {
+        font-size: 1.5rem;
+        color: var(--texte);
+        width: 90%;
+        padding: 1rem;
+    }
+
+    /*Contact Us */
+    
+    .section-deux, .trois {
+        display: flex;
+        flex-direction: column;
+        opacity:0.8;
+    }
+    .trois img {
+        width: 170%;
+        border-radius: 8px;
+    }
+
+    .card-large {
+        width: 100%;
+        padding: 2rem;
+        margin: 0 auto;
+        background-color: var(--fond);
+    }
+    
+    .card-large h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .card-large p {
+        font-size: 1.3rem;
+        margin: 10px 20px;
+    }
+    .image-placeholder {
+        width: 100%;
+        height: 25vh;
+    }
+    .image-placeholder img {
+        width: 100%;
+    }
+    .send h3 {
+        font-size: 2rem;
+        color: var(--boutton);
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .salus {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .tarifs img {
+        width: 90%;
+    }
+    
+    .plan, .offre, .proposition {
+        width: 80%;
+        padding: 2rem;
+    }
+    
+    .plan h3, .offre h3, .proposition h3 {
+        font-size: 2rem;
+    }
+    
+    .plan li, .offre li, .proposition li {
+        font-size: 1.2rem;
+    }
+    
+    .plan input[type=submit], .offre input[type=submit], .proposition input[type=submit] {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .offre p {
+        font-size: 3rem;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 60vh;
+        border: none;
+    }
+
+    .mission {
+        gap: 2rem;
+    }
+    
+    .call, .inscri {
+        width: 45%;
+        height: 30vh;
+    }
+    
+    .call h2, .inscri h2 {
+        font-size: 2rem;
+    }
+    .call p, .inscri p {
+        font-size: 1rem;
+    }
+    .call input[type=submit], .inscri input[type=submit] {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .call img {
+        width: 10%;
+    }
+    
+    .call a {
+        font-size: 1.2rem;
+    }
+    
+    
+    .faim {
+        width: 100%;
+        padding: 8rem;
+    }
+    
+    .faim h2 {
+        font-size: 3rem;
+        position: relative;
+        bottom: 2rem;
+    }
+    
+    .faim p {
+        font-size: 1rem;
+        width: 110%;
+    }
+    
+    .contener {
+        padding: 3rem;
+        gap: 2rem;
+    }
+    .contener img {
+        width: 90%;
+    }
+    
+    .globals h2 {
+        font-size: 3rem;
+    }
+    
+    .global {
+        padding: 1rem;
+        width: 70%;
+        gap: 1rem;
+    }
+    
+    .global em {
+        font-size: 1.5rem;
+    }
+    .global p {
+        font-size: 1.5rem;
+    }
+    .contacts {
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .contact, .hours {
+        padding: 1rem;
+        width: 150%;
+        margin: 1rem;
+    }
+    
+    .contact h2, .hours h2 {
+        font-size: 2rem;
+    }
+    .hours P {
+        font-size: 1rem;
+    }
+    
+    .contact a {
+        font-size: 1rem;;
+    }
+
+    .contact img {
+        width: 5%;
+    }
+    
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+    
+    .contact input[type=submit] {
+        font-size: 1rem;
+        width: 10rem;
+    }
+
+    .foot strong {
+        font-size: 1rem;
+    }
+}
 
 @keyframes fade {
     0% {

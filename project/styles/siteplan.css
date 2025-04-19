@@ -27,7 +27,7 @@ header {
     background-image: url("../images/entete.webp");
     height: 19vh;
 }
-.navbar h1 {
+header h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 7rem;
     position: relative;
@@ -142,7 +142,6 @@ footer h3 {
 }
 
 .hero h2 {
-    color: var(--fond);
     position: relative;
     top: 4rem;
     width: 70%;
@@ -306,7 +305,7 @@ form P {
     padding: 5rem;
 }
 
-.section-deux img, .trois img {
+.section-deux img, .trois img, .image-placeholder img{
     width: 100%;
     border-radius: 8px;
 }
@@ -745,9 +744,15 @@ a:hover {
     cursor: pointer;
 }
 .contact img {
-    border-radius: px;
     width: 3%;
     margin: 0 1rem;
+}
+
+.contact-info h2 {
+    font-size: 4rem;
+    color: var(--boutton);
+    text-align: center;
+    margin: 10px 0;
 }
 
 .contact input[type=submit] {
@@ -774,3 +779,4 @@ a:hover {
 #menu {
     display: none;
 }
+
