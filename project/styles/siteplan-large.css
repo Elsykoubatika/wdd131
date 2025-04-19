@@ -1,19 +1,45 @@
 /*Media Queries*/
 @media (max-width: 640px) {
 
+    /* Styles for small screens */
+    .navbar h1{
+        font-size: 4rem;
+        margin: 0 auto;
+    }
     .nav-links {
-		display: flex;
-        justify-content: space-around;
+		display: block;
+        justify-content: space-between;
 	}
-	.nav-links a {
-		display: flex; /* change state in small view */
-	}
-	#menu {
-		display: none;
-	}
-
-    #menu:checked ~ .nav-links {
-        display: flex;
+    .nav-links a {
+        display: block;
+        text-decoration: none;
+        color: var(--fond);
+        font-size: 1.8rem;
+        font-weight: bold;
+        background: var(--boutton);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+    
+    #menu {
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        color: var(--tertiary-color);
+    }
+    
+    #menu::before {
+        content: "≡";
+    }
+    
+    .show button {
+        display: none;
+    }
+    
+    #menu.show::before {
+        content: "X";
     }
 
 }
