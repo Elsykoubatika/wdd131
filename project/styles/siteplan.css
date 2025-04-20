@@ -802,13 +802,13 @@ a:hover {
     font-size: 3rem;
     color: var(--texte);
     text-align: center;
-    margin: 10px 0;
-    font-weight: bold;
+    margin: 5px 0;
+    animation: fade 2s ease-in-out;
 }
 
 .container img {
     width: 18%;
-    animation: blink 2s infinite;
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
@@ -816,7 +816,7 @@ a:hover {
         opacity: 1;
     }
     50% {
-        opacity: 0;
+        opacity: 0.3;
     }
 }
 
