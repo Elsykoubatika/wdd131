@@ -33,6 +33,10 @@ header h1 {
     position: relative;
     right: 3rem;   
     text-shadow: 0 0 8px rgb(0, 0, 0);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2rem;
+    text-shadow: 2px 2px 4px var(--ombre);
+    animation: fade 1s ease-in-out;
 }
 
 .logo img {
@@ -303,6 +307,7 @@ form P {
     justify-content: center;
     opacity:0.8;
     padding: 5rem;
+    gap: 2rem;
 }
 
 .section-deux img, .trois img, .image-placeholder img{
@@ -337,13 +342,14 @@ form P {
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 0 8px rgb(63, 62, 62);
-    margin: 2rem;
     border-radius: 5px;
     width: 90%;
+    padding: 2rem;
+    margin: 2rem auto;
 }
 
 .card-large h3 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -778,5 +784,38 @@ a:hover {
 
 #menu {
     display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.container h4, .container h2 {
+    font-size: 3rem;
+    color: var(--texte);
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.container img {
+    width: 18%;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
