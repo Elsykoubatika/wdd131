@@ -81,6 +81,7 @@ nav {
     position: relative;
     top: 33px;
     right: 2rem;
+    animation: blink 2s infinite;
 }
 
 .navbar input[type=submit]:hover {
